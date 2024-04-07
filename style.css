@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "roboto black";
+    src: url("./fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: "playfair display black";
+    src: url("./fonts/PlayfairDisplay-Black.ttf");
+}
+
+@font-face {
+    font-family: "roboto light";
+    src: url("./fonts/Roboto-Light.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    background-color: #FAF2F4;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    height: 200vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 100px;
+}
+
+.elem{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all ease 0.3s;
+}
+
+.elem h1{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-family: "roboto black", sans-serif;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.662);
+}
+
+.img-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 20px black, 0 0 0.5px rgb(0, 0, 0), 0 0 0.5px rgb(0, 0, 0);
+    transition: all ease 0.2s;
+}
+
+.details{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.details h1{
+    text-transform: capitalize;
+    font-family: "playfair display black";
+    font-size: 1vw;
+    margin-bottom: 0;
+}
+
+.details p{
+    font-size: 0.9vw;
+    text-align: center;
+    font-family: "roboto light";
+}
+
+.review{
+    margin-bottom: 20px;
+}
+
+.review i{
+    font-size: 0.9vw;
+    letter-spacing: -4px;
+    color: #FCBA10;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0.468);
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: all ease 0.2s;
+}
+
+button i{
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.elem:hover{
+    transform: scale(1.08);
+}
+
+.elem:hover button{
+    transform: translateX(-15px);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.elem:hover img{
+    transform: scale(1.1);
+}

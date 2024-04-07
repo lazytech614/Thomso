@@ -1,0 +1,43 @@
+@media(max-width: 600px){
+    .main{
+        padding: 50px 0;
+    }
+
+    .content{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .elem{
+        height: 500px;
+        width: 60%;
+    }
+
+    .elem h1{
+        font-size: 4vw;
+    }
+
+    .details{
+        margin-top: 0;
+    }
+
+    .details h1{
+        font-size: 4vw;
+        margin-bottom: 0;
+    }
+
+    .review i{
+        font-size: 3vw;
+    }
+
+    .details p{
+        font-size: 3vw;
+    }
+
+    button i{
+        font-size: 5vw;
+    }
+}
